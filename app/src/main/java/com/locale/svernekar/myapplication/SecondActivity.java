@@ -49,7 +49,8 @@ public class SecondActivity extends AppCompatActivity {
         Toast.makeText(SecondActivity.this, " " + count++
                 , Toast.LENGTH_SHORT).show();
 
-        /*new AsyncTask<Void, Void, Void>() {
+
+        new AsyncTask<Void, Void, Void>() {
 
 
             @Override
@@ -72,7 +73,7 @@ public class SecondActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, Thread.currentThread().getName()
                         , Toast.LENGTH_SHORT).show();
             }
-        }.execute();*/
+        }.execute();
 
     }
 
