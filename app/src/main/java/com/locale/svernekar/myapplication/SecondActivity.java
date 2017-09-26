@@ -4,6 +4,7 @@ import android.app.Service;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.annotation.NonNull;
@@ -70,7 +71,7 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(Void aVoid) {
                 super.onPostExecute(aVoid);
-                Toast.makeText(MainActivity.this, Thread.currentThread().getName()
+                Toast.makeText(SecondActivity.this, Thread.currentThread().getName()
                         , Toast.LENGTH_SHORT).show();
             }
         }.execute();
